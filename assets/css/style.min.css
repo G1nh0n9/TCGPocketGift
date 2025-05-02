@@ -1,0 +1,2355 @@
+html {
+    font-size: 100%;
+    overflow: auto;
+    width: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,picture {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,picture {
+    display: block
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input,button,textarea,select {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: 0;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+button {
+    cursor: pointer
+}
+
+@media screen and (min-width: 768px) {
+    .pc {
+        display:block
+    }
+
+    img.pc,span.pc,br.pc {
+        display: inline
+    }
+
+    .sp,img.sp,span.sp,br.sp {
+        display: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sp {
+        display:block
+    }
+
+    img.sp,span.sp,br.sp {
+        display: inline
+    }
+
+    .pc,img.pc,span.pc,br.pc {
+        display: none
+    }
+}
+
+#page-errors main .wrapper,#page-rules main .wrapper,#page-privacy main .wrapper,#page-cookie main .wrapper,#page-howtocheck main .wrapper,#page-get main .wrapper,#page-index main .wrapper {
+    padding: 40px 0 100px 0
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .wrapper,#page-rules main .wrapper,#page-privacy main .wrapper,#page-cookie main .wrapper,#page-howtocheck main .wrapper,#page-get main .wrapper,#page-index main .wrapper {
+        padding:3.3333333333vw 0 8.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .wrapper,#page-rules main .wrapper,#page-privacy main .wrapper,#page-cookie main .wrapper,#page-howtocheck main .wrapper,#page-get main .wrapper,#page-index main .wrapper {
+        padding:16vw 0
+    }
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.woff2") format("woff2"),url("../webfonts/fa-solid-900.ttf") format("truetype")
+}
+
+html {
+    font-size: .8333333333vw
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size:1.3333333333vw
+    }
+}
+
+.disable-auto-tel a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+    pointer-events: none
+}
+
+body {
+    font-size: 16px;
+    font-family: "Noto Sans JP",sans-serif;
+    color: #3a4452;
+    background-color: #f0f7fa;
+    font-weight: 500;
+    line-height: 1;
+    -webkit-text-size-adjust: inherit
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    body {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size:3rem
+    }
+}
+
+html[lang=zh-tw] body {
+    font-family: "Noto Sans TC",sans-serif
+}
+
+html[lang=ko] body {
+    font-family: "Noto Sans KR",sans-serif
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        -webkit-text-size-adjust:100%
+    }
+
+    body.is-fixed {
+        width: 100%;
+        height: 100%;
+        position: fixed
+    }
+}
+
+_:-ms-fullscreen,:root body {
+    overflow: hidden
+}
+
+button,input[type=text],select {
+    font-size: 16px;
+    font-family: "Noto Sans JP",sans-serif;
+    color: #3a4452;
+    font-weight: 500;
+    line-height: 1
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    button,input[type=text],select {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    button,input[type=text],select {
+        font-size:3rem
+    }
+}
+
+html[lang=zh-tw] button,html[lang=zh-tw] input[type=text],html[lang=zh-tw] select {
+    font-family: "Noto Sans TC",sans-serif
+}
+
+html[lang=ko] button,html[lang=ko] input[type=text],html[lang=ko] select {
+    font-family: "Noto Sans KR",sans-serif
+}
+
+a,button {
+    text-decoration: none;
+    color: #4c5c74
+}
+
+*:focus {
+    outline: none
+}
+
+header {
+    font-family: "Noto Sans JP",sans-serif;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header {
+        top:1.6666666667vw;
+        right: 1.6666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        top:2.6666666667vw;
+        right: 2.6666666667vw
+    }
+}
+
+header button {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 2px 2px 8px 0px rgba(0,55,131,.2);
+    aspect-ratio: 140/40;
+    width: 140px;
+    border-radius: 20px;
+    gap: 11px;
+    margin-bottom: 10px;
+    margin-left: auto
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header button {
+        font-size:1.4rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header button {
+        font-size:2.4rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header button {
+        width:11.6666666667vw;
+        border-radius: 1.6666666667vw;
+        gap: .9166666667vw;
+        margin-bottom: .8333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header button {
+        aspect-ratio:250/64;
+        width: 33.3333333333vw;
+        border-radius: 4.2666666667vw;
+        gap: 1.8666666667vw;
+        margin-bottom: 1.3333333333vw
+    }
+}
+
+header button::before {
+    content: "";
+    background: url(https://gift.pokemontcgpocket.com/assets/img/common/ic_lang.svg) no-repeat;
+    background-size: contain;
+    aspect-ratio: 1;
+    width: 21px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header button::before {
+        width:1.75vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header button::before {
+        width:5.6vw
+    }
+}
+
+header button::after {
+    content: "";
+    background: url(https://gift.pokemontcgpocket.com/assets/img/common/ic_lang_arrow.svg) no-repeat;
+    background-size: contain;
+    aspect-ratio: 9/7;
+    width: 9px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header button::after {
+        width:.75vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header button::after {
+        width:2.5333333333vw
+    }
+}
+
+header ul {
+    display: none;
+    background: #fff;
+    box-shadow: 2px 2px 8px 0px rgba(0,55,131,.2);
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 200px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header ul {
+        border-radius:.8333333333vw;
+        padding: .8333333333vw 0;
+        width: 16.6666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header ul {
+        border-radius:2.6666666667vw;
+        padding: 2.6666666667vw 0;
+        width: 46.6666666667vw
+    }
+}
+
+header ul li.tc {
+    font-family: "Noto Sans TC",sans-serif
+}
+
+header ul li.kr {
+    font-family: "Noto Sans KR",sans-serif
+}
+
+header ul a {
+    font-size: 16px;
+    display: block;
+    transition: background .3s;
+    padding: 10px 22px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header ul a {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header ul a {
+        font-size:2.8rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    header ul a {
+        padding:.8333333333vw 1.8333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header ul a {
+        padding:3.3333333333vw 5.3333333333vw
+    }
+}
+
+header ul a:hover {
+    background: #f0f7fa
+}
+
+html[lang=ja] header ul li.ja a,html[lang=zh-tw] header ul li.tc a,html[lang=ko] header ul li.kr a,html[lang=en] header ul li.en a,html[lang=fr] header ul li.fr a,html[lang=es] header ul li.es a,html[lang=de] header ul li.de a,html[lang=it] header ul li.it a,html[lang=pt-br] header ul li.pt-br a {
+    background: #f0f7fa;
+    pointer-events: none
+}
+
+footer {
+    background: linear-gradient(0deg, rgb(247, 217, 49) 0%, rgb(248, 229, 128) 100%)
+}
+
+footer .support {
+    display: flex;
+    justify-content: center;
+    background: #4c5c74;
+    gap: 60px;
+    padding: 22px 0
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .support {
+        gap:5vw;
+        padding: 1.8333333333vw 0
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .support {
+        flex-direction:column;
+        gap: 0;
+        padding: 0
+    }
+}
+
+footer .support a {
+    font-size: 16px;
+    font-weight: 700
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .support a {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .support a {
+        font-size:3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .support a {
+        line-height:1.2;
+        padding: 4vw 0;
+        text-align: center
+    }
+
+    footer .support a:not(:last-child) {
+        border-bottom: 1px solid #707e93
+    }
+}
+
+footer .support a[target=_blank] span::after {
+    font-size: 14px;
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    margin-left: .4em
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .support a[target=_blank] span::after {
+        font-size:1.4rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .support a[target=_blank] span::after {
+        font-size:2.8rem
+    }
+}
+
+footer .support a span {
+    background-size: 400% 100%;
+    background-image: linear-gradient(90deg, #99adc7 0, #99adc7 25%, #fff 50%, #00ebff 75%, #3c87ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 50%;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    transition: background-position .5s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+}
+
+footer .support a:hover span {
+    background-position: 100% 50%
+}
+
+#page-howtocheck footer .support a.howtocheck {
+    pointer-events: none
+}
+
+#page-howtocheck footer .support a.howtocheck span {
+    background-position: 100% 50%
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8461538462em;
+    padding-top: 40px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .copyright {
+        font-size:1.3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .copyright {
+        font-size:2rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .copyright {
+        padding-top:3.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .copyright {
+        line-height:1.5em;
+        padding-top: 10vw
+    }
+}
+
+footer .rules {
+    display: flex;
+    justify-content: center;
+    gap: 41px;
+    padding: 30px 0 120px 0
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .rules {
+        gap:3.4166666667vw;
+        padding: 2.5vw 0 10vw 0
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .rules {
+        align-items:center;
+        gap: 9.4666666667vw;
+        padding: 6.6666666667vw 0 16vw 0
+    }
+
+    html[lang=fr] footer .rules {
+        gap: 6.8vw
+    }
+
+    html[lang=de] footer .rules {
+        flex-wrap: wrap
+    }
+}
+
+footer .rules a {
+    position: relative;
+    font-size: 14px;
+    color: #4c5c74
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .rules a {
+        font-size:1.4rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .rules a {
+        font-size:2.4rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .rules a {
+        text-align:center;
+        line-height: 1.2
+    }
+}
+
+footer .rules a span {
+    transition: opacity .3s
+}
+
+footer .rules a:hover span {
+    opacity: .6
+}
+
+footer .rules a:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #4c5c74;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -21px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    footer .rules a:not(:last-child)::after {
+        right:-1.75vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .rules a:not(:last-child)::after {
+        right:-4.8vw
+    }
+
+    html[lang=fr] footer .rules a:not(:last-child)::after {
+        right: -3.4666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html[lang=de] footer .rules a:nth-child(2)::after {
+        display:none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html[lang=de] footer .rules a:nth-child(3) {
+        margin-top:-5.3333333333vw
+    }
+}
+
+.bg-triangle {
+    background-image: url(https://gift.pokemontcgpocket.com/assets/img/common/bg_top@pc.png),url(https://gift.pokemontcgpocket.com/assets/img/common/bg_bottom@pc.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: top left,bottom right;
+    background-size: 88.75vw auto,89.0277777778vw auto
+}
+
+@media screen and (max-width: 767px) {
+    .bg-triangle {
+        background-image:url(https://gift.pokemontcgpocket.com/assets/img/common/bg_top@sp.png),url(https://gift.pokemontcgpocket.com/assets/img/common/bg_bottom@sp.png);
+        background-size: 100% auto,100% auto
+    }
+}
+
+#pagetop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    aspect-ratio: 1;
+    background: #fff;
+    box-shadow: 2px 2px 8px 0px rgba(0,55,131,.2);
+    border-radius: 50%;
+    width: 60px;
+    right: 20px;
+    bottom: 20px;
+    transform: translateY(80px);
+    transition: opacity .3s,transform .3s
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #pagetop {
+        width:5vw;
+        right: 1.6666666667vw;
+        bottom: 1.6666666667vw;
+        transform: translateY(6.6666666667vw)
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #pagetop {
+        width:12vw;
+        right: 3.3333333333vw;
+        bottom: 3.3333333333vw;
+        transform: translateY(15.3333333333vw)
+    }
+}
+
+#pagetop:hover {
+    opacity: .8
+}
+
+#pagetop.is-show {
+    transform: translateY(0) !important
+}
+
+#pagetop span {
+    -webkit-mask-image: url(https://gift.pokemontcgpocket.com/assets/img/common/ic_pagetop.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-image: url(https://gift.pokemontcgpocket.com/assets/img/common/ic_pagetop.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background: linear-gradient(90deg, #00ebff 0%, #3c87ff 100%);
+    aspect-ratio: 30/18;
+    width: 30px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #pagetop span {
+        width:2.5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #pagetop span {
+        width:6.2666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main {
+        overflow-x:hidden
+    }
+}
+
+#page-index main h1 {
+    width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px
+}
+
+#page-index main h1 img {
+    width: 100%;
+    vertical-align: bottom
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main h1 {
+        width:29.5833333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main h1 {
+        width:57.3333333333vw
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main h1 {
+        margin-bottom:2.5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main h1 {
+        margin-bottom:6.6666666667vw
+    }
+}
+
+#page-index main .lead {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2em;
+    margin-bottom: 20px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .lead {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .lead {
+        font-size:3rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .lead {
+        margin-bottom:1.6666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .lead {
+        line-height:1.8em;
+        margin-bottom: 6vw
+    }
+}
+
+#page-index main .howtocheck {
+    text-align: center;
+    margin-bottom: 25px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .howtocheck {
+        margin-bottom:2.0833333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .howtocheck {
+        margin-bottom:8vw
+    }
+}
+
+#page-index main .howtocheck a {
+    position: relative;
+    font-size: 14px;
+    border-bottom: 1px solid #4c5c74;
+    transition: opacity .3s
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .howtocheck a {
+        font-size:1.4rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .howtocheck a {
+        font-size:2.8rem
+    }
+}
+
+#page-index main .howtocheck a:hover {
+    opacity: .6
+}
+
+#page-index main .howtocheck a::before {
+    content: "";
+    position: absolute;
+    background: url(https://gift.pokemontcgpocket.com/assets/img/common/ic_question.svg) no-repeat;
+    background-size: contain;
+    aspect-ratio: 1;
+    left: -24px;
+    width: 18px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .howtocheck a::before {
+        left:-2vw;
+        width: 1.5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .howtocheck a::before {
+        left:-6.4vw;
+        width: 4.8vw
+    }
+}
+
+#page-index main .input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 540px;
+    margin: 0 auto 40px auto
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .input-wrap {
+        gap:1.5vw;
+        width: 45vw;
+        margin-bottom: 3.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .input-wrap {
+        gap:3.3333333333vw;
+        width: 85.3333333333vw;
+        margin-bottom: 8vw
+    }
+}
+
+#page-index main .input-wrap .input {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 4px 4px 10px 0px rgba(0,55,131,.2);
+    border-radius: 8px;
+    padding: 18px 22px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .input-wrap .input {
+        border-width:.6666666667vw;
+        padding: 1.5vw 1.8333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .input-wrap .input {
+        border-width:2.1333333333vw;
+        padding: 4.2666666667vw 4.6666666667vw
+    }
+}
+
+#page-index main .input-wrap .input::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0px 0px 15px 4px rgba(0,55,131,.15)
+}
+
+#page-index main .input-wrap .input::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 4px solid #fff;
+    border-radius: 6px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .input-wrap .input::after {
+        border-width:.3333333333vw;
+        border-radius: .5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .input-wrap .input::after {
+        border-width:.8vw;
+        border-radius: 1.6vw
+    }
+}
+
+#page-index main .input-wrap .input:has(input.input-error) {
+    background: #ffe5e6
+}
+
+#page-index main .input-wrap .input:has(input.input-error) input {
+    color: #f23e44
+}
+
+#page-index main .input-wrap .input input {
+    position: relative;
+    z-index: 1;
+    font-size: 20px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .input-wrap .input input {
+        font-size:2rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .input-wrap .input input {
+        font-size:3.2rem
+    }
+}
+
+#page-index main .input-wrap .input input::placeholder {
+    color: #99adc7
+}
+
+#page-index main #error-msg {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f23e44;
+    width: 540px;
+    margin: 0 auto .5em auto
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main #error-msg {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main #error-msg {
+        font-size:3rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main #error-msg {
+        width:45vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main #error-msg {
+        width:85.3333333333vw
+    }
+}
+
+#page-index main .caution {
+    font-size: 14px;
+    line-height: 1.6
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .caution {
+        font-size:1.4rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .caution {
+        font-size:2.6rem
+    }
+}
+
+#page-index main .button-wrap button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: #fff;
+    box-shadow: 3px 3px 8px 3px rgba(180,180,180,.2);
+    overflow: hidden;
+    aspect-ratio: 4.5714285714;
+    width: 320px;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .button-wrap button {
+        font-size:2rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .button-wrap button {
+        font-size:3.2rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .button-wrap button {
+        width:26.6666666667vw;
+        border-radius: 2.9166666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .button-wrap button {
+        aspect-ratio:3.4615384615;
+        width: 48vw;
+        border-radius: 6.9333333333vw
+    }
+}
+
+#page-index main .button-wrap button::before {
+    content: "";
+    background: linear-gradient(90deg, rgb(50, 229, 239) 0%, rgb(141, 194, 255) 33%, #00ebff 66%, #3c87ff 100%);
+    transition: left .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0
+}
+
+#page-index main .button-wrap button:hover::before {
+    left: -200%
+}
+
+#page-index main .button-wrap button::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 2px solid #fff;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-index main .button-wrap button::after {
+        inset:.25vw;
+        border-width: .1666666667vw;
+        border-radius: 2.9166666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-index main .button-wrap button::after {
+        inset:.8vw;
+        border-width: .5333333333vw;
+        border-radius: 6.9333333333vw
+    }
+}
+
+#page-index main .button-wrap button:disabled {
+    pointer-events: none;
+    cursor: auto
+}
+
+#page-index main .button-wrap button:disabled::before {
+    background: #ccc
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main {
+        overflow-x:hidden
+    }
+}
+
+#page-get main h1 {
+    width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px
+}
+
+#page-get main h1 img {
+    width: 100%;
+    vertical-align: bottom
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-get main h1 {
+        width:29.5833333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main h1 {
+        width:57.3333333333vw
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-get main h1 {
+        margin-bottom:5.8333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main h1 {
+        margin-bottom:12vw
+    }
+}
+
+#page-get main .lead {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2em;
+    margin-bottom: 70px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-get main .lead {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main .lead {
+        font-size:3rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-get main .lead {
+        margin-bottom:5.8333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main .lead {
+        line-height:1.8em;
+        margin-bottom: 13.3333333333vw
+    }
+}
+
+#page-get main .button-wrap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: #fff;
+    box-shadow: 3px 3px 8px 3px rgba(180,180,180,.2);
+    overflow: hidden;
+    aspect-ratio: 4.5714285714;
+    width: 320px;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-get main .button-wrap a {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main .button-wrap a {
+        font-size:2.8rem
+    }
+}
+
+html[lang=en] #page-get main .button-wrap a,html[lang=fr] #page-get main .button-wrap a,html[lang=es] #page-get main .button-wrap a,html[lang=de] #page-get main .button-wrap a,html[lang=it] #page-get main .button-wrap a,html[lang=pt-br] #page-get main .button-wrap a {
+    aspect-ratio: 5.7142857143;
+    width: 400px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-get main .button-wrap a {
+        width:26.6666666667vw;
+        border-radius: 2.9166666667vw
+    }
+
+    html[lang=en] #page-get main .button-wrap a,html[lang=fr] #page-get main .button-wrap a,html[lang=es] #page-get main .button-wrap a,html[lang=de] #page-get main .button-wrap a,html[lang=it] #page-get main .button-wrap a,html[lang=pt-br] #page-get main .button-wrap a {
+        width: 33.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main .button-wrap a {
+        aspect-ratio:3.8461538462;
+        width: 53.3333333333vw;
+        border-radius: 6.9333333333vw
+    }
+
+    html[lang=en] #page-get main .button-wrap a,html[lang=fr] #page-get main .button-wrap a,html[lang=es] #page-get main .button-wrap a,html[lang=de] #page-get main .button-wrap a,html[lang=it] #page-get main .button-wrap a,html[lang=pt-br] #page-get main .button-wrap a {
+        aspect-ratio: 5.3846153846;
+        width: 74.6666666667vw
+    }
+}
+
+#page-get main .button-wrap a::before {
+    content: "";
+    background: linear-gradient(90deg, rgb(50, 229, 239) 0%, rgb(141, 194, 255) 33%, #00ebff 66%, #3c87ff 100%);
+    transition: left .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0
+}
+
+#page-get main .button-wrap a:hover::before {
+    left: -200%
+}
+
+#page-get main .button-wrap a::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 2px solid #fff;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-get main .button-wrap a::after {
+        inset:.25vw;
+        border-width: .1666666667vw;
+        border-radius: 2.9166666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-get main .button-wrap a::after {
+        inset:.8vw;
+        border-width: .5333333333vw;
+        border-radius: 6.9333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main {
+        overflow-x:hidden
+    }
+}
+
+#page-howtocheck main .logo {
+    width: 183px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px
+}
+
+#page-howtocheck main .logo img {
+    width: 100%;
+    vertical-align: bottom
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .logo {
+        width:15.25vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .logo {
+        width:37.0666666667vw
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .logo {
+        margin-bottom:3.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .logo {
+        margin-bottom:7.3333333333vw
+    }
+}
+
+#page-howtocheck main h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main h1 {
+        font-size:3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main h1 {
+        font-size:4rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main h1 {
+        margin-bottom:5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main h1 {
+        margin-bottom:9.3333333333vw
+    }
+}
+
+#page-howtocheck main .box {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-sizing: border-box;
+    width: 1136px;
+    border-radius: 30px;
+    padding: 25px 15px 25px 40px;
+    margin: 0 auto 80px auto
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .box {
+        width:94.6666666667vw;
+        border-radius: 2.5vw;
+        padding: 2.0833333333vw 1.25vw 2.0833333333vw 3.3333333333vw;
+        margin-bottom: 6.6666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .box {
+        flex-direction:column;
+        width: 89.3333333333vw;
+        border-radius: 4vw;
+        padding: 6vw 6vw 8vw 6vw;
+        margin-bottom: 13.3333333333vw;
+        gap: 10.6666666667vw
+    }
+}
+
+#page-howtocheck main .howtocheck {
+    display: flex;
+    justify-content: space-between;
+    width: 525px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .howtocheck {
+        width:43.75vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .howtocheck {
+        flex-direction:column;
+        width: auto;
+        gap: 2vw
+    }
+}
+
+#page-howtocheck main .howtocheck .wrap-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 245px;
+    margin-top: 15px;
+    gap: 15px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .howtocheck .wrap-text {
+        width:20.4166666667vw;
+        margin-top: 1.25vw;
+        gap: 1.25vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .howtocheck .wrap-text {
+        align-items:center;
+        width: auto;
+        margin-top: 0;
+        gap: 3.3333333333vw
+    }
+}
+
+#page-howtocheck main .howtocheck .wrap-text .no {
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgb(60, 68, 81) 0%, rgb(153, 173, 199) 100%);
+    color: #fff;
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 6px;
+    padding-bottom: 4px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .howtocheck .wrap-text .no {
+        font-size:3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .howtocheck .wrap-text .no {
+        font-size:4.5rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .howtocheck .wrap-text .no {
+        width:4.1666666667vw;
+        border-radius: .5vw;
+        padding-bottom: .3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .howtocheck .wrap-text .no {
+        width:10vw;
+        border-radius: 1.6vw;
+        padding-bottom: 1.0666666667vw
+    }
+}
+
+#page-howtocheck main .howtocheck .wrap-text .text {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 700
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .howtocheck .wrap-text .text {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .howtocheck .wrap-text .text {
+        font-size:3rem
+    }
+}
+
+html[lang=ko] #page-howtocheck main .howtocheck .wrap-text .text {
+    word-break: keep-all
+}
+
+#page-howtocheck main .howtocheck .capture {
+    width: 278px
+}
+
+#page-howtocheck main .howtocheck .capture img {
+    width: 100%;
+    vertical-align: bottom
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .howtocheck .capture {
+        width:23.1666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .howtocheck .capture {
+        width:64vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .howtocheck .capture {
+        margin-left:8vw
+    }
+}
+
+#page-howtocheck main .button-wrap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: #fff;
+    box-shadow: 3px 3px 8px 3px rgba(180,180,180,.2);
+    overflow: hidden;
+    aspect-ratio: 4.5714285714;
+    width: 320px;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .button-wrap a {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .button-wrap a {
+        font-size:2.8rem
+    }
+}
+
+html[lang=en] #page-howtocheck main .button-wrap a,html[lang=fr] #page-howtocheck main .button-wrap a,html[lang=es] #page-howtocheck main .button-wrap a,html[lang=de] #page-howtocheck main .button-wrap a,html[lang=it] #page-howtocheck main .button-wrap a,html[lang=pt-br] #page-howtocheck main .button-wrap a {
+    aspect-ratio: 5.7142857143;
+    width: 400px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .button-wrap a {
+        width:26.6666666667vw;
+        border-radius: 2.9166666667vw
+    }
+
+    html[lang=en] #page-howtocheck main .button-wrap a,html[lang=fr] #page-howtocheck main .button-wrap a,html[lang=es] #page-howtocheck main .button-wrap a,html[lang=de] #page-howtocheck main .button-wrap a,html[lang=it] #page-howtocheck main .button-wrap a,html[lang=pt-br] #page-howtocheck main .button-wrap a {
+        width: 33.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .button-wrap a {
+        aspect-ratio:3.8461538462;
+        width: 53.3333333333vw;
+        border-radius: 6.9333333333vw
+    }
+
+    html[lang=en] #page-howtocheck main .button-wrap a,html[lang=fr] #page-howtocheck main .button-wrap a,html[lang=es] #page-howtocheck main .button-wrap a,html[lang=de] #page-howtocheck main .button-wrap a,html[lang=it] #page-howtocheck main .button-wrap a,html[lang=pt-br] #page-howtocheck main .button-wrap a {
+        aspect-ratio: 5.3846153846;
+        width: 74.6666666667vw
+    }
+}
+
+#page-howtocheck main .button-wrap a::before {
+    content: "";
+    background: linear-gradient(90deg, rgb(50, 229, 239) 0%, rgb(141, 194, 255) 33%, #00ebff 66%, #3c87ff 100%);
+    transition: left .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0
+}
+
+#page-howtocheck main .button-wrap a:hover::before {
+    left: -200%
+}
+
+#page-howtocheck main .button-wrap a::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 2px solid #fff;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-howtocheck main .button-wrap a::after {
+        inset:.25vw;
+        border-width: .1666666667vw;
+        border-radius: 2.9166666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-howtocheck main .button-wrap a::after {
+        inset:.8vw;
+        border-width: .5333333333vw;
+        border-radius: 6.9333333333vw
+    }
+}
+
+#page-rules main,#page-privacy main,#page-cookie main {
+    overflow-wrap: anywhere
+}
+
+html[lang=ko] #page-rules main,html[lang=ko] #page-privacy main,html[lang=ko] #page-cookie main {
+    word-break: keep-all
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main,#page-privacy main,#page-cookie main {
+        overflow-x:hidden
+    }
+}
+
+#page-rules main .logo,#page-privacy main .logo,#page-cookie main .logo {
+    width: 183px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px
+}
+
+#page-rules main .logo img,#page-privacy main .logo img,#page-cookie main .logo img {
+    width: 100%;
+    vertical-align: bottom
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main .logo,#page-privacy main .logo,#page-cookie main .logo {
+        width:15.25vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main .logo,#page-privacy main .logo,#page-cookie main .logo {
+        width:37.0666666667vw
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main .logo,#page-privacy main .logo,#page-cookie main .logo {
+        margin-bottom:3.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main .logo,#page-privacy main .logo,#page-cookie main .logo {
+        margin-bottom:7.3333333333vw
+    }
+}
+
+#page-rules main h1,#page-privacy main h1,#page-cookie main h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main h1,#page-privacy main h1,#page-cookie main h1 {
+        font-size:3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main h1,#page-privacy main h1,#page-cookie main h1 {
+        font-size:4rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main h1,#page-privacy main h1,#page-cookie main h1 {
+        margin-bottom:5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main h1,#page-privacy main h1,#page-cookie main h1 {
+        margin-bottom:9.3333333333vw
+    }
+}
+
+#page-rules main .container,#page-privacy main .container,#page-cookie main .container {
+    width: 980px;
+    margin: 0 auto 80px auto
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main .container,#page-privacy main .container,#page-cookie main .container {
+        width:81.6666666667vw;
+        margin-bottom: 6.6666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main .container,#page-privacy main .container,#page-cookie main .container {
+        width:89.3333333333vw;
+        margin-bottom: 13.3333333333vw
+    }
+}
+
+#page-rules main h2,#page-privacy main h2,#page-cookie main h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+    border-top: 2px solid #4c5c74;
+    border-bottom: 2px solid #4c5c74;
+    padding: 18px 0;
+    margin-bottom: 30px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main h2,#page-privacy main h2,#page-cookie main h2 {
+        font-size:2rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main h2,#page-privacy main h2,#page-cookie main h2 {
+        font-size:3.4rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main h2,#page-privacy main h2,#page-cookie main h2 {
+        padding:1.5vw 0;
+        margin-bottom: 2.5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main h2,#page-privacy main h2,#page-cookie main h2 {
+        padding:5.0666666667vw 0;
+        margin-bottom: 6vw
+    }
+}
+
+#page-rules main h2.type-2,#page-privacy main h2.type-2,#page-cookie main h2.type-2 {
+    border: none;
+    margin-bottom: 0 !important
+}
+
+#page-rules main h3,#page-privacy main h3,#page-cookie main h3 {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 700;
+    padding-left: 26px;
+    margin-bottom: 20px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main h3,#page-privacy main h3,#page-cookie main h3 {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main h3,#page-privacy main h3,#page-cookie main h3 {
+        font-size:3.2rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main h3,#page-privacy main h3,#page-cookie main h3 {
+        padding-left:2.1666666667vw;
+        margin-bottom: 1.6666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main h3,#page-privacy main h3,#page-cookie main h3 {
+        padding-left:5.8666666667vw;
+        margin-bottom: 4vw
+    }
+}
+
+#page-rules main h3::before,#page-privacy main h3::before,#page-cookie main h3::before {
+    content: "";
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgb(60, 68, 81) 0%, rgb(153, 173, 199) 100%);
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main h3::before,#page-privacy main h3::before,#page-cookie main h3::before {
+        top:.5vw;
+        width: 1.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main h3::before,#page-privacy main h3::before,#page-cookie main h3::before {
+        top:1.6vw;
+        width: 3.7333333333vw
+    }
+}
+
+#page-rules main strong,#page-privacy main strong,#page-cookie main strong {
+    font-weight: 700
+}
+
+#page-rules main i,#page-privacy main i,#page-cookie main i {
+    font-style: italic
+}
+
+#page-rules main p,#page-privacy main p,#page-cookie main p {
+    font-size: 16px;
+    line-height: 1.5em
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main p,#page-privacy main p,#page-cookie main p {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main p,#page-privacy main p,#page-cookie main p {
+        font-size:3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main p,#page-privacy main p,#page-cookie main p {
+        line-height:1.5em
+    }
+}
+
+#page-rules main ul,#page-rules main ol,#page-privacy main ul,#page-privacy main ol,#page-cookie main ul,#page-cookie main ol {
+    font-size: 16px;
+    line-height: 1.5em
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main ul,#page-rules main ol,#page-privacy main ul,#page-privacy main ol,#page-cookie main ul,#page-cookie main ol {
+        font-size:1.6rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main ul,#page-rules main ol,#page-privacy main ul,#page-privacy main ol,#page-cookie main ul,#page-cookie main ol {
+        font-size:3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main ul,#page-rules main ol,#page-privacy main ul,#page-privacy main ol,#page-cookie main ul,#page-cookie main ol {
+        line-height:1.5em
+    }
+}
+
+#page-rules main ul li:not(:last-child),#page-rules main ol li:not(:last-child),#page-privacy main ul li:not(:last-child),#page-privacy main ol li:not(:last-child),#page-cookie main ul li:not(:last-child),#page-cookie main ol li:not(:last-child) {
+    margin-bottom: .5em
+}
+
+#page-rules main .type-dot li,#page-privacy main .type-dot li,#page-cookie main .type-dot li {
+    text-indent: -1em;
+    margin-left: 1em
+}
+
+#page-rules main .type-dot li::before,#page-privacy main .type-dot li::before,#page-cookie main .type-dot li::before {
+    content: "・"
+}
+
+#page-rules main .container,#page-privacy main .container,#page-cookie main .container {
+    counter-reset: cnt1
+}
+
+#page-rules main .type-no-1,#page-privacy main .type-no-1,#page-cookie main .type-no-1 {
+    counter-increment: cnt1
+}
+
+#page-rules main .type-no-1 h2::before,#page-privacy main .type-no-1 h2::before,#page-cookie main .type-no-1 h2::before {
+    content: counter(cnt1) ". "
+}
+
+#page-rules main .type-no-2,#page-privacy main .type-no-2,#page-cookie main .type-no-2 {
+    counter-reset: cnt2
+}
+
+#page-rules main .type-no-2>li,#page-privacy main .type-no-2>li,#page-cookie main .type-no-2>li {
+    position: relative;
+    padding-left: 2.5em
+}
+
+#page-rules main .type-no-2>li::before,#page-privacy main .type-no-2>li::before,#page-cookie main .type-no-2>li::before {
+    counter-increment: cnt2;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#page-rules main .type-no-2>li .type-no-3,#page-privacy main .type-no-2>li .type-no-3,#page-cookie main .type-no-2>li .type-no-3 {
+    counter-reset: cnt3
+}
+
+#page-rules main .type-no-2>li .type-no-3>li,#page-privacy main .type-no-2>li .type-no-3>li,#page-cookie main .type-no-2>li .type-no-3>li {
+    position: relative;
+    padding-left: 3.5em
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main .type-no-2>li .type-no-3>li,#page-privacy main .type-no-2>li .type-no-3>li,#page-cookie main .type-no-2>li .type-no-3>li {
+        padding-left:0;
+        padding-top: 1.5em
+    }
+}
+
+#page-rules main .type-no-2>li .type-no-3>li::before,#page-privacy main .type-no-2>li .type-no-3>li::before,#page-cookie main .type-no-2>li .type-no-3>li::before {
+    counter-increment: cnt3;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#page-rules main .type-no-2>li::before,#page-privacy main .type-no-2>li::before,#page-cookie main .type-no-2>li::before {
+    content: counter(cnt1) "." counter(cnt2)
+}
+
+#page-rules main .type-no-2>li .type-no-3>li::before,#page-privacy main .type-no-2>li .type-no-3>li::before,#page-cookie main .type-no-2>li .type-no-3>li::before {
+    content: counter(cnt1) "." counter(cnt2) "." counter(cnt3)
+}
+
+#page-rules main .type-no,#page-rules main .type-ab-brackets,#page-rules main .type-no-brackets,#page-privacy main .type-no,#page-privacy main .type-ab-brackets,#page-privacy main .type-no-brackets,#page-cookie main .type-no,#page-cookie main .type-ab-brackets,#page-cookie main .type-no-brackets {
+    counter-reset: cnt
+}
+
+#page-rules main .type-no li,#page-rules main .type-ab-brackets li,#page-rules main .type-no-brackets li,#page-privacy main .type-no li,#page-privacy main .type-ab-brackets li,#page-privacy main .type-no-brackets li,#page-cookie main .type-no li,#page-cookie main .type-ab-brackets li,#page-cookie main .type-no-brackets li {
+    position: relative
+}
+
+#page-rules main .type-no li::before,#page-rules main .type-ab-brackets li::before,#page-rules main .type-no-brackets li::before,#page-privacy main .type-no li::before,#page-privacy main .type-ab-brackets li::before,#page-privacy main .type-no-brackets li::before,#page-cookie main .type-no li::before,#page-cookie main .type-ab-brackets li::before,#page-cookie main .type-no-brackets li::before {
+    counter-increment: cnt;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#page-rules main .type-no li,#page-privacy main .type-no li,#page-cookie main .type-no li {
+    padding-left: 1.5em
+}
+
+#page-rules main .type-ab-brackets li,#page-rules main .type-no-brackets li,#page-privacy main .type-ab-brackets li,#page-privacy main .type-no-brackets li,#page-cookie main .type-ab-brackets li,#page-cookie main .type-no-brackets li {
+    padding-left: 2em
+}
+
+#page-rules main .type-no li::before,#page-privacy main .type-no li::before,#page-cookie main .type-no li::before {
+    content: counter(cnt) ". "
+}
+
+#page-rules main .type-ab-brackets li::before,#page-privacy main .type-ab-brackets li::before,#page-cookie main .type-ab-brackets li::before {
+    content: "(" counter(cnt, lower-alpha) ") "
+}
+
+#page-rules main .type-no-brackets li::before,#page-privacy main .type-no-brackets li::before,#page-cookie main .type-no-brackets li::before {
+    content: "(" counter(cnt) ") "
+}
+
+#page-rules main .mb-l,#page-privacy main .mb-l,#page-cookie main .mb-l {
+    margin-bottom: 2em
+}
+
+#page-rules main .mb-m,#page-privacy main .mb-m,#page-cookie main .mb-m {
+    margin-bottom: 1em
+}
+
+#page-rules main .mb-s,#page-privacy main .mb-s,#page-cookie main .mb-s {
+    margin-bottom: .5em
+}
+
+#page-rules main .mt-l,#page-privacy main .mt-l,#page-cookie main .mt-l {
+    margin-top: 2em
+}
+
+#page-rules main .mt-m,#page-privacy main .mt-m,#page-cookie main .mt-m {
+    margin-top: 1em
+}
+
+#page-rules main .mt-s,#page-privacy main .mt-s,#page-cookie main .mt-s {
+    margin-top: .5em
+}
+
+#page-rules main .font-kr,#page-privacy main .font-kr,#page-cookie main .font-kr {
+    font-family: "Noto Sans KR",sans-serif
+}
+
+#page-rules main .link,#page-privacy main .link,#page-cookie main .link {
+    text-decoration: underline;
+    transition: opacity .3s
+}
+
+#page-rules main .link:hover,#page-privacy main .link:hover,#page-cookie main .link:hover {
+    opacity: .6
+}
+
+#page-rules main .link[target=_blank]::after,#page-privacy main .link[target=_blank]::after,#page-cookie main .link[target=_blank]::after {
+    content: "";
+    display: inline-block;
+    aspect-ratio: 1;
+    background: url(https://gift.pokemontcgpocket.com/assets/img/common/ic_link.svg) no-repeat;
+    background-size: contain;
+    margin-right: .1em;
+    margin-left: .1em;
+    width: .7em
+}
+
+#page-rules main .button-wrap a,#page-privacy main .button-wrap a,#page-cookie main .button-wrap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: #fff;
+    box-shadow: 3px 3px 8px 3px rgba(180,180,180,.2);
+    overflow: hidden;
+    aspect-ratio: 4.5714285714;
+    width: 320px;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main .button-wrap a,#page-privacy main .button-wrap a,#page-cookie main .button-wrap a {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main .button-wrap a,#page-privacy main .button-wrap a,#page-cookie main .button-wrap a {
+        font-size:2.8rem
+    }
+}
+
+html[lang=en] #page-rules main .button-wrap a,html[lang=fr] #page-rules main .button-wrap a,html[lang=es] #page-rules main .button-wrap a,html[lang=de] #page-rules main .button-wrap a,html[lang=it] #page-rules main .button-wrap a,html[lang=pt-br] #page-rules main .button-wrap a,html[lang=en] #page-privacy main .button-wrap a,html[lang=fr] #page-privacy main .button-wrap a,html[lang=es] #page-privacy main .button-wrap a,html[lang=de] #page-privacy main .button-wrap a,html[lang=it] #page-privacy main .button-wrap a,html[lang=pt-br] #page-privacy main .button-wrap a,html[lang=en] #page-cookie main .button-wrap a,html[lang=fr] #page-cookie main .button-wrap a,html[lang=es] #page-cookie main .button-wrap a,html[lang=de] #page-cookie main .button-wrap a,html[lang=it] #page-cookie main .button-wrap a,html[lang=pt-br] #page-cookie main .button-wrap a {
+    aspect-ratio: 5.7142857143;
+    width: 400px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main .button-wrap a,#page-privacy main .button-wrap a,#page-cookie main .button-wrap a {
+        width:26.6666666667vw;
+        border-radius: 2.9166666667vw
+    }
+
+    html[lang=en] #page-rules main .button-wrap a,html[lang=fr] #page-rules main .button-wrap a,html[lang=es] #page-rules main .button-wrap a,html[lang=de] #page-rules main .button-wrap a,html[lang=it] #page-rules main .button-wrap a,html[lang=pt-br] #page-rules main .button-wrap a,html[lang=en] #page-privacy main .button-wrap a,html[lang=fr] #page-privacy main .button-wrap a,html[lang=es] #page-privacy main .button-wrap a,html[lang=de] #page-privacy main .button-wrap a,html[lang=it] #page-privacy main .button-wrap a,html[lang=pt-br] #page-privacy main .button-wrap a,html[lang=en] #page-cookie main .button-wrap a,html[lang=fr] #page-cookie main .button-wrap a,html[lang=es] #page-cookie main .button-wrap a,html[lang=de] #page-cookie main .button-wrap a,html[lang=it] #page-cookie main .button-wrap a,html[lang=pt-br] #page-cookie main .button-wrap a {
+        width: 33.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main .button-wrap a,#page-privacy main .button-wrap a,#page-cookie main .button-wrap a {
+        aspect-ratio:3.8461538462;
+        width: 53.3333333333vw;
+        border-radius: 6.9333333333vw
+    }
+
+    html[lang=en] #page-rules main .button-wrap a,html[lang=fr] #page-rules main .button-wrap a,html[lang=es] #page-rules main .button-wrap a,html[lang=de] #page-rules main .button-wrap a,html[lang=it] #page-rules main .button-wrap a,html[lang=pt-br] #page-rules main .button-wrap a,html[lang=en] #page-privacy main .button-wrap a,html[lang=fr] #page-privacy main .button-wrap a,html[lang=es] #page-privacy main .button-wrap a,html[lang=de] #page-privacy main .button-wrap a,html[lang=it] #page-privacy main .button-wrap a,html[lang=pt-br] #page-privacy main .button-wrap a,html[lang=en] #page-cookie main .button-wrap a,html[lang=fr] #page-cookie main .button-wrap a,html[lang=es] #page-cookie main .button-wrap a,html[lang=de] #page-cookie main .button-wrap a,html[lang=it] #page-cookie main .button-wrap a,html[lang=pt-br] #page-cookie main .button-wrap a {
+        aspect-ratio: 5.3846153846;
+        width: 74.6666666667vw
+    }
+}
+
+#page-rules main .button-wrap a::before,#page-privacy main .button-wrap a::before,#page-cookie main .button-wrap a::before {
+    content: "";
+    background: linear-gradient(90deg, rgb(50, 229, 239) 0%, rgb(141, 194, 255) 33%, #00ebff 66%, #3c87ff 100%);
+    transition: left .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0
+}
+
+#page-rules main .button-wrap a:hover::before,#page-privacy main .button-wrap a:hover::before,#page-cookie main .button-wrap a:hover::before {
+    left: -200%
+}
+
+#page-rules main .button-wrap a::after,#page-privacy main .button-wrap a::after,#page-cookie main .button-wrap a::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 2px solid #fff;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-rules main .button-wrap a::after,#page-privacy main .button-wrap a::after,#page-cookie main .button-wrap a::after {
+        inset:.25vw;
+        border-width: .1666666667vw;
+        border-radius: 2.9166666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-rules main .button-wrap a::after,#page-privacy main .button-wrap a::after,#page-cookie main .button-wrap a::after {
+        inset:.8vw;
+        border-width: .5333333333vw;
+        border-radius: 6.9333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main {
+        overflow-x:hidden
+    }
+}
+
+#page-errors main .logo {
+    width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px
+}
+
+#page-errors main .logo img {
+    width: 100%;
+    vertical-align: bottom
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .logo {
+        width:29.5833333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .logo {
+        width:57.3333333333vw
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .logo {
+        margin-bottom:5vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .logo {
+        margin-bottom:9.3333333333vw
+    }
+}
+
+#page-errors main h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #f23e44;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main h1 {
+        font-size:3rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main h1 {
+        font-size:4.8rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main h1 {
+        margin-bottom:1.6666666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main h1 {
+        margin-bottom:2.6666666667vw
+    }
+}
+
+#page-errors main .error-msg {
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 700;
+    color: #f23e44;
+    text-align: center;
+    margin-bottom: 70px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .error-msg {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .error-msg {
+        font-size:3rem
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .error-msg {
+        margin-bottom:5.8333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .error-msg {
+        margin-bottom:12vw
+    }
+}
+
+#page-errors main .button-wrap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: #fff;
+    box-shadow: 3px 3px 8px 3px rgba(180,180,180,.2);
+    overflow: hidden;
+    aspect-ratio: 4.5714285714;
+    width: 320px;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .button-wrap a {
+        font-size:1.8rem
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .button-wrap a {
+        font-size:2.8rem
+    }
+}
+
+html[lang=en] #page-errors main .button-wrap a,html[lang=fr] #page-errors main .button-wrap a,html[lang=es] #page-errors main .button-wrap a,html[lang=de] #page-errors main .button-wrap a,html[lang=it] #page-errors main .button-wrap a,html[lang=pt-br] #page-errors main .button-wrap a {
+    aspect-ratio: 5.7142857143;
+    width: 400px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .button-wrap a {
+        width:26.6666666667vw;
+        border-radius: 2.9166666667vw
+    }
+
+    html[lang=en] #page-errors main .button-wrap a,html[lang=fr] #page-errors main .button-wrap a,html[lang=es] #page-errors main .button-wrap a,html[lang=de] #page-errors main .button-wrap a,html[lang=it] #page-errors main .button-wrap a,html[lang=pt-br] #page-errors main .button-wrap a {
+        width: 33.3333333333vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .button-wrap a {
+        aspect-ratio:3.8461538462;
+        width: 53.3333333333vw;
+        border-radius: 6.9333333333vw
+    }
+
+    html[lang=en] #page-errors main .button-wrap a,html[lang=fr] #page-errors main .button-wrap a,html[lang=es] #page-errors main .button-wrap a,html[lang=de] #page-errors main .button-wrap a,html[lang=it] #page-errors main .button-wrap a,html[lang=pt-br] #page-errors main .button-wrap a {
+        aspect-ratio: 5.3846153846;
+        width: 74.6666666667vw
+    }
+}
+
+#page-errors main .button-wrap a::before {
+    content: "";
+    background: linear-gradient(90deg, rgb(50, 229, 239) 0%, rgb(141, 194, 255) 33%, #00ebff 66%, #3c87ff 100%);
+    transition: left .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0
+}
+
+#page-errors main .button-wrap a:hover::before {
+    left: -200%
+}
+
+#page-errors main .button-wrap a::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 2px solid #fff;
+    border-radius: 35px
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-errors main .button-wrap a::after {
+        inset:.25vw;
+        border-width: .1666666667vw;
+        border-radius: 2.9166666667vw
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-errors main .button-wrap a::after {
+        inset:.8vw;
+        border-width: .5333333333vw;
+        border-radius: 6.9333333333vw
+    }
+}
+
+#page-cookie main h4 {
+    font-weight: 700;
+    font-size: 18px !important
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-cookie main h4 {
+        font-size:1.8rem !important
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-cookie main h4 {
+        font-size:3.2rem !important
+    }
+}
+
+#page-cookie main #cookie-policy-description,#page-cookie main .ot-sdk-cookie-policy-group-desc,#page-cookie main section th,#page-cookie main section td {
+    font-size: 16px !important
+}
+
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    #page-cookie main #cookie-policy-description,#page-cookie main .ot-sdk-cookie-policy-group-desc,#page-cookie main section th,#page-cookie main section td {
+        font-size:1.6rem !important
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #page-cookie main #cookie-policy-description,#page-cookie main .ot-sdk-cookie-policy-group-desc,#page-cookie main section th,#page-cookie main section td {
+        font-size:3rem !important
+    }
+}
