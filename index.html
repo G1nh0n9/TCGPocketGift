@@ -22,42 +22,11 @@
     <meta name="twitter:title" content="TOP 페이지 | 선물 코드 공식 사이트">
     <meta name="twitter:description" content="「포켓몬 카드 게임 Pocket」의 서포트 ID와 선물 코드를 입력해서 플레이 아이템을 받자!">
     <meta name="twitter:image" content="https://gift.pokemontcgpocket.com/assets/og/kr/ogp.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&amp;family=Noto+Sans+TC:wght@500;700&amp;family=Noto+Sans+KR:wght@500;700&amp;display=swap">
+    <link rel="stylesheet" media="all" type="text/css" href="/assets/css/style.min.css?1740456893758">
   </head>
-  <body id="page-index">
-    <header>
-            <nav>
-                <button type="button" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_language', 'event':'click'});">Language</button>
-                <ul>
-                    <li class="ja">
-                        <a href="/ja/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_日本語', 'event':'click'});">日本語</a>
-                    </li>
-                    <li class="tc">
-                        <a href="/tc/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_繁体字', 'event':'click'});">繁體中文</a>
-                    </li>
-                    <li class="kr">
-                        <a href="/kr/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_韓国語', 'event':'click'});">한국어</a>
-                    </li>
-                    <li class="en">
-                        <a href="/en/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_英語', 'event':'click'});">English</a>
-                    </li>
-                    <li class="fr">
-                        <a href="/fr/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_フランス語', 'event':'click'});">Français</a>
-                    </li>
-                    <li class="it">
-                        <a href="/it/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_イタリア語', 'event':'click'});">Italiano</a>
-                    </li>
-                    <li class="de">
-                        <a href="/de/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_ドイツ語', 'event':'click'});">Deutsch</a>
-                    </li>
-                    <li class="es">
-                        <a href="/es/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_スペイン語', 'event':'click'});">Español (España)</a>
-                    </li>
-                    <li class="pt-br">
-                        <a href="/pt-br/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'言語', 'click-lbl':'btn_ポルトガル語', 'event':'click'});">Português do Brasil</a>
-                    </li>
-                </ul>
-            </nav>
-    </header>
     <main>
             <section class="wrapper bg-triangle">
                 <h1>
@@ -65,7 +34,7 @@
                 </h1>
                 <p class="lead">
                     「포켓몬 카드 게임 Pocket」<br class="sp">
-                    에서 플레이 아이템을 받기 위한<br>선물 코드와 서포트 ID를 입력해 주십시오.
+                    에서 플레이 아이템을 받기 위한 서포트 ID를 입력해 주십시오.
                 </p>
                 <p class="howtocheck">
                     <a href="/kr/howtocheck/" onclick="dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'トップ', 'click-lbl':'btn_サポートIDの確認方法', 'event':'click'});">서포트 ID 확인 방법</a>
@@ -75,10 +44,7 @@
                     <div class="input">
                         <input id="input-support" name="support" type="text" placeholder="서포트 ID">
                     </div>
-                    <div class="input">
-                        <input id="input-keyword" name="keyword" type="text" placeholder="선물 코드">
-                    </div>
-                    <p class="caution">※선물 코드에 영문자 O(오), I(아이), Z(제트), A(에이), E(이), U(유)는 사용할 수 없습니다.</p>
+                    <p class="caution">※선물 코드에는 S5N4NDM00N 가 적용됩니다.</p>
                 </div>
                 <div class="button-wrap">
                     <button id="js-submit" type="button" onclick="_check_code(); dataLayer.push({'click-ctg':'プレゼントコード_韓', 'click-act':'トップ', 'click-lbl':'btn_送信', 'event':'click'});">보내기</button>
